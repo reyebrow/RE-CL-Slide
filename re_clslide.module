@@ -1,0 +1,29 @@
+<?php
+// $Id$
+
+/**
+ * @file
+ * Provides the CL Example javascript library and styles to the RE Context
+ * Libraries module.
+ */
+
+
+/**
+ * Implementation of hook_define_re_contextlibraries_library().
+ */
+function re_clslide_define_re_contextlibraries_library() {
+  $path_to_module = drupal_get_path('module', 're_clslide');
+  $library = array(
+    're_clslide' => array(
+      'name' => 'CL Slide (provided by: re_clslide)',
+      'css' =>  array(
+        $path_to_module .'/css/re_clslide.css',
+      ),
+      'js' => array(
+        $path_to_module .'/js/jquery.tools.min.js',
+        $path_to_module .'/js/re_clslide.js',
+      ),
+    ),
+  );
+  return $library;
+} // re_clslide_define_re_contextlibraries_library()

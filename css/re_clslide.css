@@ -1,0 +1,62 @@
+/**
+ * @file
+ * Provides styles for RE CL Slide slideshow
+ * @see http://flowplayer.org/tools/demos/scrollable/index.html
+ */
+
+
+/**
+ * root element for the scrollable.
+ * when scrolling occurs this element stays still.
+ */
+#block-views-re_clslide-block_1 .view-content {
+  /* required settings */
+  height: 338px;
+  overflow: hidden;
+  position: relative;
+  width: 600px;
+}
+
+  /**
+   * root element for scrollable items. Must be absolutely positioned
+   * and it should have a extremely large width to accommodate scrollable items.
+   * it's enough that you set width and height for the root element and
+   * not for this element.
+   */
+  #block-views-re_clslide-block_1 .view-content > ul {
+    list-style-type: none;
+    position: absolute;
+    /* this cannot be too large */
+    width: 20000em;
+  }
+
+    /**
+     * a single item. must be floated in horizontal scrolling.
+     * typically, this element is the one that *you* will style
+     * the most.
+     */
+    #block-views-re_clslide-block_1 .view-content > ul .re_clslide {
+      float: left;
+      height: 338px;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      width: 600px;
+    }
+    
+      #block-views-re_clslide-block_1 .view-content > ul .re_clslide h3 {
+        bottom: 1.5em;
+        color: #000;
+        font-size: 2em;
+        left: 1.5em;
+        position: absolute;
+        right: 1.5em;
+        text-align: right;
+        text-shadow: 1px 1px 1px #fff;
+      }
+      
+      #block-views-re_clslide-block_1 .view-content > ul .re_clslide img {
+        display: block;
+        vertical-align: bottom;
+      }

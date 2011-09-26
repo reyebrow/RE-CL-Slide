@@ -1,0 +1,10 @@
+;$Id$
+
+name = 'RE CL Slide'
+description = 'Provides the CL Slide javascript library and styles to the RE Context Libraries module.'
+package = 'Raised Eyebrow Custom Modules'
+dependencies[] = re_contextlibraries
+dependencies[] = advagg
+core = 6.x
+php = 5.2
+version = 6.x-1.0
